@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "author": "Yashwanth Yashu",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": -66.6, "left": 37.8, "attrs": {} },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": 204.8,
+      "left": -95.2,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-relay-module",
+      "id": "relay1",
+      "top": 57,
+      "left": -147.2,
+      "rotate": 180,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "ldr1:VCC", "uno:3.3V", "red", [ "h0" ] ],
+    [ "ldr1:GND", "uno:GND.2", "black", [ "h0" ] ],
+    [ "ldr1:DO", "uno:A0", "green", [ "h0" ] ],
+    [ "relay1:VCC", "uno:5V", "red", [ "h19.2", "v57.6", "h192" ] ],
+    [ "relay1:GND", "uno:GND.3", "black", [ "h48", "v96.4", "h182.4" ] ],
+    [ "relay1:IN", "uno:7", "green", [ "h28.8", "v-211", "h220.8" ] ]
+  ],
+  "dependencies": {}
+}
