@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "author": "Yashwanth Yashu",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 67.8, "left": 28.2, "attrs": {} },
+    { "type": "wokwi-pir-motion-sensor", "id": "pir1", "top": -53.6, "left": -45.78, "attrs": {} }
+  ],
+  "connections": [
+    [ "pir1:GND", "uno:GND.1", "black", [ "v19.2", "h134.14" ] ],
+    [ "pir1:VCC", "uno:3.3V", "red", [ "v240", "h96" ] ],
+    [ "pir1:OUT", "uno:7", "green", [ "v9.6", "h211.06" ] ]
+  ],
+  "dependencies": {}
+}
